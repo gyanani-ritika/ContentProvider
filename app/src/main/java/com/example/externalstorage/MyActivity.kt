@@ -1,16 +1,18 @@
 package com.example.externalstorage
 
+import android.content.ContentValues
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
-import android.os.Environment
+import android.provider.MediaStore
+import android.util.Log
+import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import java.io.File
-import java.io.FileInputStream
-import java.io.FileOutputStream
-import java.io.IOException
 
-/*class MyActivity : AppCompatActivity() {
+class MyActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.Q)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,10 +52,10 @@ import java.io.IOException
             }
         }
     }
-}*/
+}
 
 
-class MyActivity : AppCompatActivity() {
+/*class MyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mine)
@@ -102,4 +104,4 @@ class MyActivity : AppCompatActivity() {
             }
         }
     }
-}
+}*/
